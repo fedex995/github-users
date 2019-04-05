@@ -1,0 +1,41 @@
+
+//fonts
+$header-font: 'Poppins', sans-serif;
+$text-font: 'IBM Plex Sans', sans-serif;
+
+//colors
+// - defaults
+$primary-blue: #0c497d;
+$primary-light-blue: #00aeef;
+$primary-green: #00cc6a;
+$primary-red: #f34972;
+
+$secondary-blue: #83adc2;
+$secondary-light-blue: #afdafd;
+
+$dark: #363945;
+$regular: #747982;
+$light: #afb3ba;
+$disabled: #d4d8dd;
+$gray: #eaeaea;
+
+$background-color: $gray;
+$border-color: #dcdfe3;
+
+// - text
+$dark-text: $dark;
+$regular-text: $regular;
+$light-text: $light;
+$disabled-text: $gray;
+
+// - buttons
+$primary-button: #00aeef;
+$alternative-button-dark: #747982;
+$alternative-button-gray: #afb3ba;
+$alternative-button-green: #00cc6a;
+$back-button: #ffff0000;
+$back-button-border: #747982;
+
+// - inputs
+$input-border-color: #d4d8dd;
+

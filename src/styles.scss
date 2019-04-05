@@ -1,0 +1,55 @@
+@import "./constants.scss";
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: $background-color;
+}
+
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: fit-content;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background-color;
+}
+
+h1,h2,h3,h4,h5,h6,button {
+  font-family: $header-font;
+}
+
+h4 {
+  letter-spacing: 0.04em;
+}
+
+label, li, p, .title {
+  font-family: $text-font;
+}
+
+p {
+  font-weight: 300;
+}
+
+label {
+  font-weight: 300;
+  color: $regular-text;
+}
+
+input, textarea {
+  font-family: $text-font;
+  font-weight: 500;
+  font-size: 17px;
+  min-width: 0;
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  color:  $primary-light-blue;
+}

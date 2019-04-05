@@ -5,7 +5,7 @@ import NavbarScreen from "./containers/Navbar";
 
 
 const routes = (
-        <div style={{height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div className="main-container">
             <NavbarScreen/>
             <Switch>
                 <Route exact path='/' component={UserSearch}/>

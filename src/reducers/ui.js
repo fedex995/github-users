@@ -1,8 +1,10 @@
 
-const initialState = {};
+const initialState = {
+    loadingUser: false,
+};
 
 const ui = (state = initialState, action) => {
-    return initialState
+    return state;
 };
 
 export default ui;

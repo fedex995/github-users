@@ -1,0 +1,40 @@
+@import "../styles.scss";
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+  input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $regular;
+  }
+  input, label, button {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  button {
+    border-radius: 30px;
+    width: 200px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+      border: none;
+    }
+    &.primary {
+      background-color: $primary-button;
+      color: white;
+    }
+    &.alternative {
+      background-color: $alternative-button-green;
+      color: white;
+    }
+  }
+}

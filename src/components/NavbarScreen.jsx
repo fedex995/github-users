@@ -1,9 +1,14 @@
 import React, {Component} from "react";
+import "./NavbarScreen.css";
 
 class NavbarScreen extends Component {
 
     render() {
-        return <label>Navbar</label>;
+        return (
+          <nav>
+            <label>Github User Search</label>
+          </nav>
+        );
     }
 }
 

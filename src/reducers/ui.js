@@ -1,5 +1,9 @@
 import {GET_REPOS_REQUEST, GET_REPOS_RESPONSE, GET_USER_ERROR, GET_USER_REQUEST, GET_USER_RESPONSE} from "../actions";
 
+/*
+    This reducer handles all flags for UI states (loaders, error messages, etc).
+ */
+
 const initialState = {
     loadingUser: false,
     loadingRepos: false,

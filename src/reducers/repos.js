@@ -1,5 +1,8 @@
 import {GET_REPOS_REQUEST, GET_REPOS_RESPONSE} from "../actions";
 
+/*
+    Save the repos of the selected user
+ */
 const initialState = [];
 
 const ui = (state = initialState, action) => {

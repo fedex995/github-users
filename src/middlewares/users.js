@@ -14,7 +14,9 @@ const usersMiddleware = ({ dispatch, getState }) => next => action => {
             dispatch(push("/user"))
         }).catch(err => dispatch(actions.getUserError(err)))
     }
+
     if (action.type === GET_REPOS_REQUEST) {
+        //TODO manage the possibility of pagination for reports
         get(action.reposUrl).then(repos => {
             dispatch(actions.getReposResponse(repos));
         });

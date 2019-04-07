@@ -2,8 +2,23 @@
 
 .repos-container {
   .repo {
-    padding: 20px 20px;
+    padding: 20px 0;
+    margin: 0 40px;
     flex-direction: column;
     border-bottom: 1px solid $light;
   }
+
+  @media(max-width: 720px) {
+    .repo {
+      margin: 0 -20px;
+      padding: 20px 20px;
+
+      label {
+        text-overflow: clip;
+        overflow: hidden;
+        word-break: break-all;
+      }
+    }
+  }
 }
+

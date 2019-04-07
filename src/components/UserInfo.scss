@@ -46,6 +46,10 @@
     margin-top: 20px;
 
     .col {
+      label {
+        text-align: center;
+        padding: 0 5px;
+      }
       &:not(:nth-child(4)) {
         border-right: 1px solid $light;
       }
@@ -77,9 +81,36 @@
   }
 
   .details {
-    padding: 20px;
+    padding: 20px 40px;
     .row {
       padding: 5px 0;
+    }
+  }
+  @media(max-width: 720px) {
+    width: 80%;
+
+    .highlights {
+      &.row {
+        flex-direction: column;
+      }
+      .col {
+        padding: 10px 0;
+        flex-direction: row;
+        &:not(:nth-child(4)) {
+          border-right: none;
+        }
+        border-bottom: 1px solid $regular;
+      }
+    }
+
+    .details {
+      padding: 20px 20px;
+    }
+
+    .tabs {
+      >div {
+        margin: 0;
+      }
     }
   }
 }

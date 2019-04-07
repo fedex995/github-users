@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import "./NavbarScreen.css";
+import "./Navbar.css";
 
-class NavbarScreen extends Component {
+class Navbar extends Component {
 
     render() {
         return (
@@ -12,4 +12,4 @@ class NavbarScreen extends Component {
     }
 }
 
-export default NavbarScreen;
+export default Navbar;

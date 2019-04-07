@@ -10,6 +10,7 @@ const history = createBrowserHistory();
 
 const middleware = routerMiddleware(history);
 
+// TODO persist store so users can refresh user profile
 const store = createStore(
     reducer,
     undefined,

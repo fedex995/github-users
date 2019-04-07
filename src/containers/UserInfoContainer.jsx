@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import actions from "../actions";
 import {withRouter} from 'react-router'
-import UserInfo from "../components/UserInfo";
+import UserInfoScreen from "../components/UserInfoScreen";
 
 const mapStateToProps = (state) => {
     return {
@@ -15,4 +15,4 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(UserInfo));
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(UserInfoScreen));

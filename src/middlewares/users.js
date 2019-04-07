@@ -4,6 +4,10 @@ import actions from "../actions";
 import {push} from "connected-react-router";
 import {get} from "../utils/http";
 
+/*
+    User middleware, in charge of making the requests to github API and
+    dispatching the action to the reducers.
+ */
 const usersMiddleware = ({ dispatch, getState }) => next => action => {
     next(action);
     if (action.type === GET_USER_REQUEST) {
@@ -19,7 +23,7 @@ const usersMiddleware = ({ dispatch, getState }) => next => action => {
         //TODO manage the possibility of pagination for reports
         get(action.reposUrl).then(repos => {
             dispatch(actions.getReposResponse(repos));
-        });
+        }).catch(err => dispatch(actions.getReposError(err)));
     }
 };
 

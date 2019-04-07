@@ -1,0 +1,11 @@
+.searches-container {
+  width: 95%;
+  .searches {
+    display: flex;
+    flex-direction: row;
+    .section {
+      align-items: center;
+      padding: 20px;
+    }
+  }
+}

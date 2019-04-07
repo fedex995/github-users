@@ -2,11 +2,17 @@
 
 .user-info-container {
   width: 60%;
+  opacity: 0;
   background: white;
   padding: 20px;
   margin: 40px;
   border-radius: 20px;
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+  &.show {
+    opacity: 1;
+    transition: 700ms ease-out;
+  }
 
   .back-container {
     display: flex;
@@ -28,18 +34,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-  }
-
-  .title-info {
-    h2 {
-      margin: 10px 0;
-    }
-
-    .avatar{
-      width: 160px;
-      height: 160px;
-      border-radius: 160px;
-    }
   }
 
   .highlights {
@@ -112,5 +106,21 @@
         margin: 0;
       }
     }
+  }
+}
+
+.user-info {
+  h2 {
+    margin: 10px 0;
+    text-align: center;
+  }
+  a {
+    text-align: center;
+  }
+
+  .avatar{
+    width: 160px;
+    height: 160px;
+    border-radius: 160px;
   }
 }

@@ -1,34 +1,33 @@
 import React, {Component} from "react";
-import "./UserInfo.css";
+import "./UserInfoScreen.css";
 import ReposListContainer from "../containers/ReposListContainer";
 import arrow from "../assets/arrow-up-DARK.svg";
 
-class UserInfo extends Component {
+class UserInfoScreen extends Component {
 
     constructor() {
         super();
         this.state = {
-            currentTab: 0
+            currentTab: 0,
+            showInfo: false
         }
     }
 
+    componentDidMount() {
+        setTimeout(() => this.setState({showInfo: true}), 300);
+
+    }
     render() {
         const user = this.props.user;
         if(!user.id) this.props.history.push("/");
 
         return (
-            <div className="user-info-container">
+            <div className={`user-info-container ${this.state.showInfo && "show"}`}>
                 <div className={"back-container"} onClick={() => this.props.history.goBack()}>
                     <img src={arrow}/>
                     <label>Go Back</label>
                 </div>
-                <div className={"row section title-info"}>
-                    <div className={"col"}>
-                        <img className={"avatar"} alt={"avatar"} src={user.avatar_url}/>
-                        <h2>{user.login}</h2>
-                        <a href={user.html_url} target={"blank"}>Go to profile</a>
-                    </div>
-                </div>
+                <UserProfile user={user}/>
                 <div className={"row section highlights"}>
                     {
                         [
@@ -90,4 +89,14 @@ const UserInfoDetails = ({user}) => {
     );
 };
 
-export default UserInfo;
+export const UserProfile = ({user}) => (
+    <div className={"row section user-info"}>
+        <div className={"col"}>
+            <img className={"avatar"} alt={"avatar"} src={user.avatar_url}/>
+            <h2>{user.login}</h2>
+            <a href={user.html_url} target={"blank"}>Go to profile</a>
+        </div>
+    </div>
+);
+
+export default UserInfoScreen;

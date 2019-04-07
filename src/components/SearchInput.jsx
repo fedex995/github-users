@@ -18,7 +18,8 @@ class SearchInput extends Component {
 
     onFormSubmit(event) {
         event.preventDefault();
-        this.props.searchUser(this.state.value);
+        if (!this.props.loadingUser)
+            this.props.searchUser(this.state.value);
     }
     onFormSubmitRef = this.onFormSubmit.bind(this);
 

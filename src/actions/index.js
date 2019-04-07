@@ -1,3 +1,7 @@
+/*
+    Declare and export redux's actions
+ */
+
 export const GET_USER_REQUEST = 'GET_USER_REQUEST';
 export const GET_USER_RESPONSE = 'GET_USER_RESPONSE';
 export const GET_USER_ERROR = 'GET_USER_ERROR';

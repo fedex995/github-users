@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import SearchContainer from "../containers/SearchContainer";
 import "./UserSearchScreen.css";
 import Loader from "./Loader";
+import SearchHistory from "./SearchHistory";
 class UserSearchScreen extends Component {
 
     constructor(props) {
@@ -13,7 +14,8 @@ class UserSearchScreen extends Component {
         return (
 
             <div className={"user-screen"}>
-                 <SearchContainer/>
+                <SearchContainer/>
+                <SearchHistory searches={this.props.searches}/>
             </div>
 
         );

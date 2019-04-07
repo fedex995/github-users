@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import "./SearchInput.css";
+import Loader from "./Loader";
 
 class SearchInput extends Component {
 
@@ -26,7 +27,12 @@ class SearchInput extends Component {
             <form className={"search-container"} onSubmit={this.onFormSubmitRef}>
                 <input value={this.state.value} onChange={this.onInputChangeRef} autoFocus={true}/>
                 <label>Type in the user you want to look up</label>
-                <button className={"alternative"} type={"submit"}>Search</button>
+                {
+                    this.props.loadingUser ?
+                        <Loader/> :
+                        <button className={"alternative"} type={"submit"}>Search</button>
+                }
+                <label className={`error-label ${this.props.userNotFound && "show"}`}>The user doesn't exist!</label>
             </form>
         );
     }

@@ -12,7 +12,7 @@ const usersMiddleware = ({ dispatch, getState }) => next => action => {
             dispatch(actions.getUserResponse(user));
             dispatch(actions.getReposRequest(user.repos_url));
             dispatch(push("/user"))
-        })
+        }).catch(err => dispatch(actions.getUserError(err)))
     }
     if (action.type === GET_REPOS_REQUEST) {
         get(action.reposUrl).then(repos => {

@@ -5,7 +5,8 @@ import SearchInput from "../components/SearchInput";
 
 const mapStateToProps = (state) => {
     return {
-
+        loadingUser: state.ui.loadingUser,
+        userNotFound: state.ui.userNotFound
     }
 };
 

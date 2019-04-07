@@ -12,8 +12,9 @@
     outline: none;
     border-bottom: 1px solid $regular;
     text-align: center;
+    padding: 5px;
   }
-  input, label, button {
+  input, label {
     margin-bottom: 30px;
     font-size: 32px;
   }
@@ -35,6 +36,18 @@
     &.alternative {
       background-color: $alternative-button-green;
       color: white;
+    }
+  }
+
+  .error-label {
+    margin-top: 20px;
+    opacity: 0;
+    color: $primary-red;
+    font-size: 18px;
+
+    &.show {
+      opacity: 1;
+      transition: 1s linear;
     }
   }
 }

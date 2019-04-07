@@ -6,8 +6,11 @@ const ReposList = ({repos}) => (
         {
             repos.map(repo => (
                 <div className={"repo row"} key={repo.id}>
-                    <label><b>Name:</b> {repo.name}</label>
                     <label><b>ID:</b> {repo.id}</label>
+                    <label><b>Name:</b> <a href={repo.clone_url} target={"blank"}>{repo.name}</a></label>
+                    <label><b>Description:</b> {repo.description || "-"}</label>
+                    <div className={"actions"}>
+                    </div>
                 </div>
             ))
         }

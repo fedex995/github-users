@@ -1,8 +1,25 @@
 @import "../constants.scss";
 
 .user-info-container {
-  padding-top: 40px;
   width: 60%;
+  background: white;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+  .back-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    label {
+      cursor: pointer;
+    }
+    img {
+      transform: rotate(270deg);
+      width: 30px;
+    }
+  }
 
   .section {
     margin-top: 20px;
@@ -51,7 +68,10 @@
 
       &.active {
         transition: 0.2s ease-in;
-        border-bottom: 1px solid $primary-light-blue;
+        border-bottom: 2px solid $primary-light-blue;
+        label {
+          font-weight: 500;
+        }
       }
     }
   }

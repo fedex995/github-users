@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "./UserInfo.css";
 import ReposListContainer from "../containers/ReposListContainer";
+import arrow from "../assets/arrow-up-DARK.svg";
 
 class UserInfo extends Component {
 
@@ -13,9 +14,14 @@ class UserInfo extends Component {
 
     render() {
         const user = this.props.user;
+        if(!user.id) this.props.history.push("/");
 
         return (
             <div className="user-info-container">
+                <div className={"back-container"} onClick={() => this.props.history.goBack()}>
+                    <img src={arrow}/>
+                    <label>Go Back</label>
+                </div>
                 <div className={"row section title-info"}>
                     <div className={"col"}>
                         <img className={"avatar"} alt={"avatar"} src={user.avatar_url}/>
@@ -40,7 +46,7 @@ class UserInfo extends Component {
                 </div>
                 <div className={"tabs section row"}>
                     {
-                        ["More info", "Repos"].map((elem, i) => (
+                        ["Profile", "Repos"].map((elem, i) => (
                             <div key={elem} className={"col" + (i === this.state.currentTab ? " active" : "")} onClick={() => this.setState({currentTab: i})}>
                                 <label>{elem}</label>
                             </div>

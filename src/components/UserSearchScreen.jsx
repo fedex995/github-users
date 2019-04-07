@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import SearchContainer from "../containers/SearchContainer";
-import UserInfo from "../containers/UserInfoContainer";
 import "./UserSearchScreen.css";
+import Loader from "./Loader";
 class UserSearchScreen extends Component {
 
     constructor(props) {
@@ -13,7 +13,7 @@ class UserSearchScreen extends Component {
         return (
 
             <div className={"user-screen"}>
-                <SearchContainer/>
+                 <SearchContainer/>
             </div>
 
         );

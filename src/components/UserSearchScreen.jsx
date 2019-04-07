@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import SearchContainer from "../containers/SearchContainer";
-
+import UserInfo from "../containers/UserInfo";
+import "./UserSearchScreen.css";
 class UserSearchScreen extends Component {
 
     constructor(props) {
@@ -11,8 +12,11 @@ class UserSearchScreen extends Component {
     render() {
         return (
 
-            <div className={"search-container"}>
-                <SearchContainer/>
+            <div className={"user-screen"}>
+                {
+                    this.props.showUserInfo ?
+                        <UserInfo/> : <SearchContainer/>
+                }
             </div>
 
         );

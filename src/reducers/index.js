@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import ui from './ui';
-import users from './users';
+import user from './user';
 import { createBrowserHistory } from 'history';
 import { connectRouter } from 'connected-react-router';
 
@@ -8,7 +8,7 @@ const history = createBrowserHistory();
 
 const rootReducer = combineReducers({
     ui,
-    users,
+    user,
     router: connectRouter(history)
 });
 

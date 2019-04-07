@@ -1,0 +1,28 @@
+.user-info-container {
+  width: 60%;
+  .col {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .title-info {
+    h2 {
+      margin: 10px 0;
+    }
+
+    .avatar{
+      width: 160px;
+      height: 160px;
+      border-radius: 160px;
+    }
+  }
+
+  .highlights {
+    margin-top: 20px;
+
+    .col label:nth-child(2) {
+      margin-top: 5px;
+    }
+  }
+}

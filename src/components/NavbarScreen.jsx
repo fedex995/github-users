@@ -6,7 +6,7 @@ class NavbarScreen extends Component {
     render() {
         return (
           <nav>
-            <label>Github User Search</label>
+            <a href={""}><label>Github User Search</label></a>
           </nav>
         );
     }

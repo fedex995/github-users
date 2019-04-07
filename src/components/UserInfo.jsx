@@ -40,7 +40,7 @@ class UserInfo extends Component {
                 <div className={"tabs section row"}>
                     {
                         ["More info", "Repos"].map((elem, i) => (
-                            <div className={"col" + (i === this.state.currentTab ? " active" : "")} onClick={() => this.setState({currentTab: i})}>
+                            <div key={elem} className={"col" + (i === this.state.currentTab ? " active" : "")} onClick={() => this.setState({currentTab: i})}>
                                 <label>{elem}</label>
                             </div>
                         ))

@@ -11,7 +11,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        searchUser: (username) => dispatch(actions.getUsers(username))
+        searchUser: (username) => dispatch(actions.getUser(username))
     }
 };
 

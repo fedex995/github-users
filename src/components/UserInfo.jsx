@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import "./UserInfo.css";
+import ReposListContainer from "../containers/ReposListContainer";
 
 class UserInfo extends Component {
 
@@ -31,7 +32,7 @@ class UserInfo extends Component {
                             {title: "Following", value: user.following},
                         ].map(elem => (
                             <div className={"col"} key={elem.title}>
-                                <label>{elem.title}</label>
+                                <label><b>{elem.title}</b></label>
                                 <label>{elem.value}</label>
                             </div>
                         ))
@@ -48,7 +49,7 @@ class UserInfo extends Component {
                 </div>
                 {
                     this.state.currentTab === 0 ?
-                        <UserInfoDetails user={user}/> : <div>repos</div>
+                        <UserInfoDetails user={user}/> : <ReposListContainer/>
                 }
             </div>
         )

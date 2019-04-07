@@ -1,5 +1,12 @@
+@import "../constants.scss";
+
 .user-info-container {
+  padding-top: 40px;
   width: 60%;
+
+  .section {
+    margin-top: 20px;
+  }
   .col {
     align-items: center;
     justify-content: center;
@@ -21,8 +28,37 @@
   .highlights {
     margin-top: 20px;
 
-    .col label:nth-child(2) {
-      margin-top: 5px;
+    .col {
+      &:not(:nth-child(4)) {
+        border-right: 1px solid $light;
+      }
+      label:nth-child(2) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .tabs {
+    >div {
+      label {
+        cursor: pointer;
+      }
+      margin: 0 40px;
+      padding: 10px 0;
+      border-bottom: 1px solid transparent;
+      transition: 0.2s ease-in;
+
+      &.active {
+        transition: 0.2s ease-in;
+        border-bottom: 1px solid $primary-light-blue;
+      }
+    }
+  }
+
+  .details {
+    padding: 20px;
+    .row {
+      padding: 5px 0;
     }
   }
 }

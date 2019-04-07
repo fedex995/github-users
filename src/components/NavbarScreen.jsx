@@ -6,7 +6,7 @@ class NavbarScreen extends Component {
     render() {
         return (
           <nav>
-            <a href={""}><label>Github User Search</label></a>
+            <a onClick={() => this.props.history.push("/")}><label>Github User Search</label></a>
           </nav>
         );
     }

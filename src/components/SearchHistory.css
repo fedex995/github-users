@@ -1,6 +1,7 @@
 .searches-container {
   width: 100%;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  flex-grow: 1; }
   .searches-container .title, .searches-container .no-history-label {
     padding-left: 15px; }
   .searches-container .searches {

@@ -1,5 +1,5 @@
 {
-  "main.css": "/static/css/main.773788a6.chunk.css",
+  "main.css": "/static/css/main.97cbf19c.chunk.css",
   "main.js": "/static/js/main.e0872060.chunk.js",
   "main.js.map": "/static/js/main.e0872060.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
   "static/js/2.d4998465.chunk.js": "/static/js/2.d4998465.chunk.js",
   "static/js/2.d4998465.chunk.js.map": "/static/js/2.d4998465.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.9f9e9bf64b6e2c758eeb9676bb2696be.js": "/precache-manifest.9f9e9bf64b6e2c758eeb9676bb2696be.js",
+  "precache-manifest.ecc58d02c5f8b27ad7f27b9c8b4f7d0f.js": "/precache-manifest.ecc58d02c5f8b27ad7f27b9c8b4f7d0f.js",
   "service-worker.js": "/service-worker.js",
   "static/css/2.095625e1.chunk.css.map": "/static/css/2.095625e1.chunk.css.map",
-  "static/css/main.773788a6.chunk.css.map": "/static/css/main.773788a6.chunk.css.map",
+  "static/css/main.97cbf19c.chunk.css.map": "/static/css/main.97cbf19c.chunk.css.map",
   "static/media/arrow-up-DARK.svg": "/static/media/arrow-up-DARK.1e818085.svg"
 }

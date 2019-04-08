@@ -1,6 +1,8 @@
 .searches-container {
   width: 100%;
   overflow-x: scroll;
+  flex-grow: 1;
+
   .title, .no-history-label {
     padding-left: 15px;
   }

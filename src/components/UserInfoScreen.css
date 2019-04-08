@@ -1,0 +1,79 @@
+.user-info-container {
+  width: 60%;
+  opacity: 0;
+  background: white;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+  .user-info-container.show {
+    opacity: 1;
+    transition: 700ms ease-out; }
+  .user-info-container .back-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .user-info-container .back-container label {
+      cursor: pointer; }
+    .user-info-container .back-container img {
+      transform: rotate(270deg);
+      width: 30px; }
+  .user-info-container .section {
+    margin-top: 20px; }
+  .user-info-container .col {
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+  .user-info-container .highlights {
+    margin-top: 20px; }
+    .user-info-container .highlights .col label {
+      text-align: center;
+      padding: 0 5px; }
+    .user-info-container .highlights .col:not(:nth-child(4)) {
+      border-right: 1px solid #afb3ba; }
+    .user-info-container .highlights .col label:nth-child(2) {
+      margin-top: 5px; }
+  .user-info-container .tabs > div {
+    cursor: pointer;
+    margin: 0 40px;
+    padding: 10px 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease-in; }
+    .user-info-container .tabs > div label {
+      cursor: pointer; }
+    .user-info-container .tabs > div.active {
+      transition: 0.2s ease-in;
+      border-bottom: 2px solid #00aeef; }
+      .user-info-container .tabs > div.active label {
+        font-weight: 500; }
+  .user-info-container .details {
+    padding: 20px 40px; }
+    .user-info-container .details .row {
+      padding: 5px 0; }
+  @media (max-width: 720px) {
+    .user-info-container {
+      width: 80%; }
+      .user-info-container .highlights.row {
+        flex-direction: column; }
+      .user-info-container .highlights .col {
+        padding: 10px 0;
+        flex-direction: row;
+        border-bottom: 1px solid #747982; }
+        .user-info-container .highlights .col:not(:nth-child(4)) {
+          border-right: none; }
+      .user-info-container .details {
+        padding: 20px 20px; }
+      .user-info-container .tabs > div {
+        margin: 0; } }
+
+.user-info h2 {
+  margin: 10px 0;
+  text-align: center; }
+
+.user-info a, .user-info label {
+  text-align: center; }
+
+.user-info .avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 160px; }

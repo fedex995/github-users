@@ -1,0 +1,14 @@
+.repos-container .repo {
+  padding: 20px 0;
+  margin: 0 40px;
+  flex-direction: column;
+  border-bottom: 1px solid #afb3ba; }
+
+@media (max-width: 720px) {
+  .repos-container .repo {
+    margin: 0 -20px;
+    padding: 20px 20px; }
+    .repos-container .repo label {
+      text-overflow: clip;
+      overflow: hidden;
+      word-break: break-all; } }

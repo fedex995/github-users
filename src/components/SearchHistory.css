@@ -1,0 +1,11 @@
+.searches-container {
+  width: 100%;
+  overflow-x: scroll; }
+  .searches-container .title, .searches-container .no-history-label {
+    padding-left: 15px; }
+  .searches-container .searches {
+    display: flex;
+    flex-direction: row; }
+    .searches-container .searches .section {
+      align-items: center;
+      padding: 20px; }

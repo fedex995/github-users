@@ -14,7 +14,8 @@ class UserInfoScreen extends Component {
     }
 
     componentDidMount() {
-        setTimeout(() => this.setState({showInfo: true}), 300);
+        if (this.props.user.id)
+            setTimeout(() => this.setState({showInfo: true}), 300);
 
     }
     render() {

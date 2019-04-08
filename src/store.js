@@ -11,6 +11,7 @@ const history = createBrowserHistory();
 const middleware = routerMiddleware(history);
 
 // TODO persist store so users can refresh user profile
+// TODO don't include logger middleware in production
 const store = createStore(
     reducer,
     undefined,

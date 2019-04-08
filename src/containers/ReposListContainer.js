@@ -14,4 +14,4 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(ReposList));
+export default connect(mapStateToProps, mapDispatchToProps)(ReposList);

@@ -15,4 +15,4 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(UserSearchScreen));
+export default connect(mapStateToProps, mapDispatchToProps)(UserSearchScreen);

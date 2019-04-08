@@ -2,6 +2,8 @@ import React from "react";
 import {UserProfile} from "./UserInfoScreen";
 import "./SearchHistory.css";
 
+//TODO add posibility to clear history
+
 const SearchHistory = ({searches, onUserClick}) => (
     <div className={"searches-container"}>
         <h2 className={"title"}>Search history</h2>

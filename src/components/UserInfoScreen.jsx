@@ -62,6 +62,8 @@ class UserInfoScreen extends Component {
     }
 }
 
+//TODO split these in different files
+
 const UserInfoDetails = ({user}) => {
     // Prepare the user data we want to render.
     const data = [
@@ -91,7 +93,7 @@ const UserInfoDetails = ({user}) => {
 };
 
 export const UserProfile = ({user, onUserClick}) => (
-    <div className={"row section user-info"} key={user.id} onClick={onUserClick ? () => onUserClick(user.login) : null}>
+    <div className={`row section user-info ${onUserClick ? "pointer" : ""}`} key={user.id} onClick={onUserClick ? () => onUserClick(user.login) : null}>
         <div className={"col"}>
             <img className={"avatar"} alt={"avatar"} src={user.avatar_url}/>
             <h2>{user.login}</h2>

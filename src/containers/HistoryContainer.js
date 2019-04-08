@@ -15,5 +15,5 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(withRouter(SearchHistory));
+export default connect(mapStateToProps, mapDispatchToProps)(SearchHistory);
 

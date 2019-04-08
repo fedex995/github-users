@@ -18,6 +18,7 @@ const ui = (state = initialState, action) => {
         // TODO distinguish between different type of errors.
         case GET_USER_ERROR: return {...state, loadingUser: false, userNotFound: true};
 
+        // TODO handle repos error response
         case GET_REPOS_REQUEST: return {...state, loadingRepos: true};
         case GET_REPOS_RESPONSE: return {...state, loadingRepos: false};
         default: return state;

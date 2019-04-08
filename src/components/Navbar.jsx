@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = ({history}) => (
     <nav>
-        <a onClick={() => history.push("/")}><label>Github User Search</label></a>
+        <button onClick={() => history.push("/")}><label>Github User Search</label></button>
     </nav>
 );
 

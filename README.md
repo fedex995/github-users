@@ -1,2 +1,2 @@
-# github-user
-Simple webpage to fetch github user and learn about their profile
+# Github-user
+Simple webpage to fetch github users and learn about their profile

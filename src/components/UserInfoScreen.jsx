@@ -24,7 +24,7 @@ class UserInfoScreen extends Component {
         return (
             <div className={`user-info-container ${this.state.showInfo && "show"}`}>
                 <div className={"back-container"} onClick={() => this.props.history.goBack()}>
-                    <img src={arrow}/>
+                    <img alt={"back"} src={arrow}/>
                     <label>Go Back</label>
                 </div>
                 <UserProfile user={user}/>
@@ -89,12 +89,13 @@ const UserInfoDetails = ({user}) => {
     );
 };
 
-export const UserProfile = ({user}) => (
-    <div className={"row section user-info"}>
+export const UserProfile = ({user, onUserClick}) => (
+    <div className={"row section user-info"} key={user.id} onClick={onUserClick ? () => onUserClick(user.login) : null}>
         <div className={"col"}>
             <img className={"avatar"} alt={"avatar"} src={user.avatar_url}/>
             <h2>{user.login}</h2>
-            <a href={user.html_url} target={"blank"}>Go to profile</a>
+            <a href={user.html_url} onClick={(e) => e.stopPropagation()} target={"blank"}>Go to profile</a>
+            {user.visited && <label>Visited {user.visited} {`time${(user.visited === 1 ? "" : "s")}`}</label>}
         </div>
     </div>
 );

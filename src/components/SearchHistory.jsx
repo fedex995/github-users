@@ -2,14 +2,16 @@ import React from "react";
 import {UserProfile} from "./UserInfoScreen";
 import "./SearchHistory.css";
 
-const SearchHistory = ({searches}) => (
+const SearchHistory = ({searches, onUserClick}) => (
     <div className={"searches-container"}>
-        <h2>Search history</h2>
+        <h2 className={"title"}>Search history</h2>
         <div className={"searches"}>
             {
-                searches.map(user => (
-                    <UserProfile user={user}/>
-                ))
+                searches.length > 0 ?
+                    searches.map(user => (
+                        <UserProfile key={user.id} user={user} onUserClick={onUserClick}/>
+                    )) :
+                    <label className={"no-history-label"}>Your previous searches will appear here, go on and try it!</label>
             }
         </div>
     </div>

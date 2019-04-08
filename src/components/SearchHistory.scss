@@ -1,5 +1,9 @@
 .searches-container {
-  width: 95%;
+  width: 100%;
+  overflow-x: scroll;
+  .title, .no-history-label {
+    padding-left: 15px;
+  }
   .searches {
     display: flex;
     flex-direction: row;

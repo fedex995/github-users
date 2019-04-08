@@ -1,5 +1,4 @@
 import { connect } from 'react-redux'
-import actions from "../actions";
 import {withRouter} from 'react-router'
 import UserInfoScreen from "../components/UserInfoScreen";
 

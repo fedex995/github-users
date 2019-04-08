@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Switch} from 'react-router';
 import UserSearch from './containers/UserSearchContainer';
-import NavbarScreen from "./containers/NavbarContainer";
+import NavbarScreen from "./components/Navbar";
 import UserInfoContainer from "./containers/UserInfoContainer";
 
 /*
